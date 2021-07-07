@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'graduate-project.c9rpxmt946al.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '3306',
+        'NAME': 'graduatedb',
+        'USER': 'admin',
+        'PASSWORD': 'hyrecproject16',
     }
 }
 
